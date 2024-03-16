@@ -79,6 +79,10 @@ const EachProduct = () => {
             </a>
           </div>
         </div>
+        <div className="flex justify-between">
+            <button className="border border-[#458BD1] text-[#458BD1] hover:bg-[#458BD1] hover:text-white mt-4 text-[14px] pt-2 pb-2 pr-[44px] pl-[44px]">Связаться</button>
+            <div className="flex gap-3 items-center "></div>
+        </div>
       </div>
     </div>
   );

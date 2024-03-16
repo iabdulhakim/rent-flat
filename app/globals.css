@@ -20,4 +20,5 @@ a{
 .product-wrapper{
   background-image: url(../public/bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
