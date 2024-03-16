@@ -4,14 +4,67 @@ const Header = () => {
   return (
     <div>
       <header className="bg-black flex flex-col pb-8 ">
-        <div className="flex justify-between pr-4 pl-4 pt-3">
+        <div className="flex justify-between items-center pr-4 pl-4 pt-3">
           <img src="./logo.svg" alt="" className="" />
-          <button className="text-white cursor-pointer hover:bg-white hover:text-black font-extralight pt-2 pb-2 pr-5 pl-5 border-white border rounded-[50px] text-[14px]">
+          <nav className="hidden md:flex gap-5">
+            <a
+              href="#"
+              className="text-[#cccaca] hover:text-[#FFDF42] font-extralight"
+            >
+              Квартиры
+            </a>
+            <a
+              href="#"
+              className="text-[#cccaca] hover:text-[#FFDF42] font-extralight"
+            >
+              Коттеджи
+            </a>
+            <a
+              href="#"
+              className="text-[#cccaca] hover:text-[#FFDF42] font-extralight"
+            >
+              Аренда авто
+            </a>
+            <a
+              href="#"
+              className="text-[#cccaca] hover:text-[#FFDF42] font-extralight"
+            >
+              Блог
+            </a>
+            <a
+              href="#"
+              className="text-[#cccaca] hover:text-[#FFDF42] font-extralight"
+            >
+              Контакты
+            </a>
+          </nav>
+          <button className="text-white cursor-pointer  hover:bg-white hover:text-black font-extralight pt-2 pb-2 pr-5 pl-5 border-white border rounded-[50px] text-[14px]">
             Заявка на подбор
           </button>
-          <img src="./menu.svg" alt="" className="cursor-pointer" />
+          <div className="hidden md:flex flex-col gap-1">
+            <p className="text-[14px] text-[#FFDF42] underline font-light">+375 (29) 899-98-89</p>
+            <div className="flex gap-[10px] cursor-pointer">
+              <img src="./viber.svg" alt="" className="h-[20px] w-[20px]" />
+              <img src="./whatsapp.svg" alt="" className="h-[20px] w-[20px]" />
+              <img src="./telegram.svg" alt="" className="h-[20px] w-[20px]" />
+              <img src="./mail.svg" alt="" className="h-[20px] w-[20px]" />
+            </div>
+          </div>
+          <button className="hidden md:flex max-w-[170px] items-center gap-5 border border-yellow-400 rounded-[50px] p-2 pr-[34px]">
+            <img
+              src="./add.svg"
+              alt=""
+              className="bg-yellow-400 p-[7px] rounded-[60px]"
+            />
+            <span className="text-yellow-400 font-extralight text-[14px]">
+              Добавить объявление
+            </span>
+          </button>
+          <img src="./menu.svg" alt="" className="cursor-pointer md:hidden" />
         </div>
-        <div className="pt-8 flex flex-col items-center gap-4">
+        {/* Md style */}
+
+        <div className="pt-8 flex flex-col md:hidden items-center gap-4">
           <a
             href=""
             className="text-[#F0F0F0] font-extralight text-[20px] border w-full border-t-black border-r-black border-l-black text-center border-b-black hover:border-t-yellow-400 pb-[14px] pt-[14px] hover:border-b-yellow-400 hover:text-yellow-400 "
@@ -53,10 +106,10 @@ const Header = () => {
             </span>
           </button>
         </div>
-        <div className="mr-auto ml-auto mt-9">
-          <Socials/>
+        <div className="md:hidden mr-auto ml-auto mt-9">
+          <Socials />
         </div>
-        <div className="flex gap-4 pl-6 pt-[60px]">
+        <div className="flex gap-4 md:hidden pl-6 pt-[60px]">
           {/* Second logo */}
           <svg
             xmlns="http://www.w3.org/2000/svg"

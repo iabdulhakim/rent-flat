@@ -1,10 +1,10 @@
 const Product = () => {
   return (
-    <div className="pl-[15px] pr-[15px] pt-6">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center pl-[15px] pr-[15px] pt-6">
       <h1 className="text-[#458BD1] text-center font-bold text-[24px]">
         Квартира на сутки в Минске
       </h1>
-      <div className="flex gap-3 items-center pt-2">
+      <div className="flex gap-3 items-center pt-2 md:items-center">
         <p className="text-gray-400">24.10.2019 - 05.11.2019</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -44,9 +44,9 @@ const Product = () => {
         </svg>
       </div>
       <div className="text-gray-400 flex items-center pt-7">
-        <p className="text-[14px] mr-1 cursor-pointer">Сначала новые</p>
-        <svg
-        className="mr-[30px]"
+        <p className="text-[14px] mr-1 md:mt-[-20px] cursor-pointer">Сначала новые</p>
+        <svg 
+        className="mr-[30px] md:mt-[-20px]"
           xmlns="http://www.w3.org/2000/svg"
           width="12"
           height="8"
@@ -59,10 +59,10 @@ const Product = () => {
             stroke-width="1.4"
           />
         </svg>
-        <button className="bg-[#458BD1] pt-[7px] pb-[7px] pl-5 pr-4 text-white font-semibold rounded-l-[20px] border border-[#458BD1]">Список</button>
-        <button className="bg-white pt-[7px] pb-[7px] pl-5 pr-7 text-[#458BD1] font-semibold rounded-r-[20px] border border-[#458BD1]">Карта</button>
+        <button className="bg-[#458BD1] pt-[7px] md:mt-[-20px] pb-[7px] pl-5 pr-4 text-white font-semibold rounded-l-[20px] border border-[#458BD1]">Список</button>
+        <button className="bg-white pt-[7px] pb-[7px] md:mt-[-20px] pl-5 pr-7 text-[#458BD1] font-semibold rounded-r-[20px] border border-[#458BD1]">Карта</button>
       </div>
-      <p className="text-end mt-5 text-gray-400 text-[10px]">Найдено результатов: <span className="text-[#458BD1] font-semibold">285</span></p>
+      <p className="text-end mt-5 text-gray-400 text-[10px] md:hidden">Найдено результатов: <span className="text-[#458BD1] font-semibold">285</span></p>
     </div>
   );
 };

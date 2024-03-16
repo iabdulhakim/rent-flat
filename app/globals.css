@@ -4,13 +4,25 @@
 
 body{
   font-family: "Roboto";
+  background-color: #F0F0F0;
 }
 
+
+
 .container{
-  max-width: 400px;
+  max-width: 1200px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .container{
+    max-width: 400px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 a{
@@ -19,6 +31,18 @@ a{
 
 .product-wrapper{
   background-image: url(../public/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-wrapper2{
+  background-image: url(../public/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-wrapper3{
+  background-image: url(../public/bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

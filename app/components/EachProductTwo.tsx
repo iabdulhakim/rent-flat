@@ -1,17 +1,16 @@
-const EachProduct = () => {
-  return (
-    <div className="">
-      <div className="product-wrapper md:w-[370px] mt-7 h-[280px]">
+const EachProductTwo = () => {
+  return <div>
+    <div className="product-wrapper2 md:w-[370px] mt-7 h-[280px]">
         <div className="flex justify-between items-center">
           <div className="bg-white w-[95px] pt-2 pb-4">
             <h2 className="text-[#458BD1] text-[20px] text-center font-bold">
-              9899<span className="text-gray-500 text-[10px]">BYN</span>
+              102<span className="text-gray-500 text-[10px]">BYN</span>
             </h2>
             <p className="text-gray-400 text-[10px] text-center">за сутки</p>
           </div>
           <div className="bg-[#211a1dbf] pl-[10px] pr-[13px] mr-3">
             <p className="text-[#F0F0F0] text-[12px]">
-              <span className="text-yellow-400 text-[18px] font-bold">1</span>
+              <span className="text-yellow-400 text-[18px] font-bold">2</span>
               -комнатная
             </p>
           </div>
@@ -67,9 +66,7 @@ const EachProduct = () => {
           </div>
         </div>
         <div className="flex justify-between items-center pb-6">
-          <button className="border border-[#458BD1] text-[#458BD1] hover:bg-[#458BD1] hover:text-white mt-4 text-[14px] pt-2 pb-2 pr-[44px] pl-[44px]">
-            Связаться
-          </button>
+          <p className="text-[14px] underline text-[#458BD1] pt-[34px]">+375 (29) 668-98-89</p>
           <div className="flex gap-3 items-center">
             <img src="./viber.svg" alt="" />
             <img src="./whatsapp.svg" alt="" />
@@ -77,8 +74,7 @@ const EachProduct = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+  </div>;
 };
 
-export default EachProduct;
+export default EachProductTwo;
